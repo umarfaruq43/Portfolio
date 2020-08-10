@@ -1,0 +1,278 @@
+body {
+  background-color: #090c17;
+}
+.logo {
+  width: 9em;
+  position: absolute;
+  top: -.2em;
+}
+nav ul li a {
+  margin: 0 7px;
+  padding: 0;
+}
+nav {
+  background-color: #020312;
+}
+nav ul li a:hover {
+  color: #ee330e;
+}
+.start {
+  height: 90vh;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-image: url(../img/top-c.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.plane {
+  font-size: 2em;
+  padding: 0 20px;
+  color: #020312;
+}
+
+.r-letter {
+  font-size: 7vw;
+  color: #020312;
+  text-shadow: 0 0 7px #fff;
+}
+
+.d {
+  font-size: 3vw;
+  color: #020312;
+  text-shadow: 0 0 7px #fff;
+}
+.t {
+  font-size: 5vw;
+  color: #ee330e;
+  text-shadow: 0 0 4px #020312;
+}
+.g {
+  font-size: 2vw;
+  color: #020312;
+  text-shadow: 0 0 7px #fff;
+}
+.p_color {
+  color: #e87159;
+}
+#service {
+  padding-bottom: 5em;
+  background-color: #090c17;
+}
+.h {
+  height: 260px;
+  background-color: #12141c;
+  padding: 0 2%;
+  width: 21em;
+  transition-duration: 1s;
+}
+.h:hover {
+  background-color: rgba(9, 12, 23, 0.925);
+  border: 1px solid rgb(242, 108, 78);
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mt {
+  margin-top: 5em;
+}
+.line {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.middle {
+  width: 30px;
+}
+.top {
+  padding: 5em 0;
+}
+.l {
+  border: 1px solid red;
+  width: 25px;
+}
+.bottom {
+  padding-bottom: 5px;
+  border-bottom: 3px solid red;
+}
+.h a {
+  color: #fff;
+}
+/********ABOUT ME************/
+#about {
+  background-color: #020312;
+  margin: 0;
+  padding: 0;
+}
+.p-w {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.info {
+  background-color: #090c17;
+}
+.l_top {
+  color: #e87159;
+}
+.space {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  /* flex-wrap: wrap; */
+}
+.space a {
+  color: #fff;
+}
+.go button {
+}
+.call {
+  background-color: #e87159;
+  color: #020312;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  transition-duration: 1s;
+}
+.cv {
+  background-color: initial;
+  padding: 10px 19px;
+  border: 1px solid #e87159;
+  transition-duration: 1s;
+  color: #fff;
+}
+.call:hover {
+  background-color: initial;
+  border: 1px solid #e87159;
+  color: #fff;
+}
+.cv:hover {
+  background-color: #e87159;
+  color: #090c17;
+  font-weight: bold;
+}
+.cv i {
+  font-size: 0.8em;
+  padding-right: 10px;
+}
+.call i {
+  font-size: 0.8em;
+  padding-left: 10px;
+}
+.hire {
+  margin: 5em 0;
+  background-image: url(../img/build.jpg);
+  background-attachment: fixed;
+  padding: 30px;
+  background-position: center;
+}
+.hire h2 {
+  font-weight: bold;
+  font-size: 6vh;
+  color: initial;
+  text-shadow: 0 0px 2px #ee330e;
+}
+.hire a {
+  padding: 10px 20px;
+}
+.hire .button {
+  border: none;
+  background-color: #e87159;
+  padding: 10px 25px;
+  color: #fff;
+  font-weight: bold;
+  transition-duration: 1s;
+}
+.hire .button:hover {
+  background-color: initial;
+  border: 3px solid #e87159;
+}
+/*****SKILLS**********/
+
+.s_skill {
+  margin: 3em 0;
+}
+/*****  gET IN TOUCH   **********/
+.sms {
+  padding: 3em 0;
+}
+
+.get {
+  padding: 5em 0;
+}
+.c {
+  padding-top: 2em;
+}
+/* *{
+ border:  1px solid red;
+} */
+
+.sms input {
+  background-color: #090c17;
+  color: #fff;
+  outline: none;
+}
+.sms textarea {
+  background-color: #12141c;
+  color: #fff;
+  outline: none;
+}
+
+.sms input:hover {
+  background-color: #090c17;
+  outline: none;
+}
+.sms textarea:hover {
+  background-color: #12141c;
+  outline: none;
+}
+.sms {
+  background-image: url(../img/sms.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+/****************************************
+     RESPONSIVENESS
+****************************************/
+@media screen and (max-width: 480px) {
+  .start {
+    height: 70vh;
+    padding-top: 5em;
+    padding-bottom: 0em;
+    background-image: url(../img/top-c.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .r-letter {
+    font-size: 2em;
+    color: #020312;
+    text-shadow: 0 0 7px #fff;
+  }
+
+  .d {
+    font-size: 7vw;
+    color: #020312;
+    text-shadow: 0 0 7px #fff;
+  }
+
+  .t {
+    font-size: 8vw;
+    color: #ee330e;
+    text-shadow: 0 0 4px #020312;
+  }
+  .g {
+    font-size: 4vw;
+    color: #020312;
+    text-shadow: 0 0 7px #fff;
+  }
+  .logo {
+  width: 9em;
+  position: absolute;
+  top: -.2em;
+  left: 1px;
+}
+}
