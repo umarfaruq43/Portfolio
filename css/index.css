@@ -1,5 +1,9 @@
 body {
-  background-color: #090c17;
+  background-color: #020312;
+  padding: 0;margin: 0;
+}
+*{
+  box-sizing: border-box;
 }
 .logo {
   width: 9em;
@@ -30,7 +34,9 @@ nav ul li a:hover {
   padding: 0 20px;
   color: #020312;
 }
-
+/* *{
+  border: 1px solid red;
+} */
 .r-letter {
   font-size: 7vw;
   color: #020312;
@@ -163,7 +169,7 @@ nav ul li a:hover {
 }
 .hire {
   margin: 5em 0;
-  background-image: url(../img/build.jpg);
+  background-image: url(../img/top-.jpg);
   background-attachment: fixed;
   padding: 30px;
   background-position: center;
@@ -172,7 +178,7 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: 6vh;
   color: initial;
-  text-shadow: 0 0px 2px #ee330e;
+  text-shadow: 0 0px 2px #fff;
 }
 .hire a {
   padding: 10px 20px;
@@ -276,3 +282,6 @@ nav ul li a:hover {
   left: 1px;
 }
 }
+/* *{
+  border: 1px solid red;
+} */
