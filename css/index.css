@@ -67,19 +67,16 @@ nav ul li a:hover {
 }
 .h {
   height: 260px;
+  padding: 3% ;
   background-color: #12141c;
-  padding: 0 2%;
-  width: 21em;
   transition-duration: 1s;
 }
 .h:hover {
   background-color: rgba(9, 12, 23, 0.925);
   border: 1px solid rgb(242, 108, 78);
 }
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.c{
+  margin: 1em 0;
 }
 .mt {
   margin-top: 5em;
@@ -195,11 +192,67 @@ nav ul li a:hover {
   background-color: initial;
   border: 3px solid #e87159;
 }
-/*****SKILLS**********/
-
-.s_skill {
-  margin: 3em 0;
+.pro-page a{
+  color:#e87159;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 2s;
 }
+.pro-page a:hover{
+  color:#ee330e;
+}
+.pro-page a i{
+  transition-duration: 1s;
+}
+.pro-page a i:hover{
+  margin-left: 1em;
+}
+/***************/
+.move-arrow{
+  
+    width: 70px;
+    height: 47px;
+    position: relative;
+    font-weight: bold;
+    color:#fff;
+    padding: 10px;
+    animation: move-arrow 5s 1;
+    -moz-animation: move-arrow 5s 1;
+    -webkit-animation: move-arrow 5s 1;
+    -o-animation:move-arrow 5s 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+ @keyframes move-arrow {
+   
+0% {
+    transform: rotate(0deg);
+    left: 0px;
+}
+25% {
+    transform: rotate(20deg);
+    left: 0px;
+}
+50% {
+    transform: rotate(0deg);
+    left: 50%;
+}
+55% {
+    transform: rotate(-180deg);
+    left: 0%;
+}
+70% {
+    transform: rotate(0deg);
+    left: 90%;
+    color: #1ec7e6;
+}
+100% {
+    transform: rotate(-360deg);
+    left: 0px;
+}
+ }
+
 /*****  gET IN TOUCH   **********/
 .sms {
   padding: 3em 0;
@@ -216,12 +269,12 @@ nav ul li a:hover {
 } */
 
 .sms input {
-  background-color: #090c17;
+  background-color: #020312;
   color: #fff;
   outline: none;
 }
 .sms textarea {
-  background-color: #12141c;
+  background-color: #020312;
   color: #fff;
   outline: none;
 }
@@ -239,6 +292,10 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+.view{
+  background-color: #ee330e;
+  color: #fff;
 }
 /****************************************
      RESPONSIVENESS
@@ -281,6 +338,12 @@ nav ul li a:hover {
   top: -.2em;
   left: 1px;
 }
+.view{
+  background-color: #ee330e;
+  color: #fff;
+  font-size: 0.9em;
+}
+
 }
 /* *{
   border: 1px solid red;
