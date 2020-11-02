@@ -1,14 +1,15 @@
 body {
   background-color: #020312;
-  padding: 0;margin: 0;
+  padding: 0;
+  margin: 0;
 }
-*{
+* {
   box-sizing: border-box;
 }
 .logo {
   width: 9em;
   position: absolute;
-  top: -.2em;
+  top: -0.2em;
 }
 nav ul li a {
   margin: 0 7px;
@@ -67,7 +68,7 @@ nav ul li a:hover {
 }
 .h {
   height: 260px;
-  padding: 3% ;
+  padding: 3%;
   background-color: #12141c;
   transition-duration: 1s;
 }
@@ -76,10 +77,10 @@ nav ul li a:hover {
   border: 1px solid rgb(242, 108, 78);
 }
 .c{
-  margin: 1em 0;
+  
 }
 .mt {
-  margin-top: 5em;
+  margin: 5em 0;
 }
 .line {
   display: flex;
@@ -129,8 +130,7 @@ nav ul li a:hover {
 .space a {
   color: #fff;
 }
-.go button {
-}
+
 .call {
   background-color: #e87159;
   color: #020312;
@@ -155,6 +155,8 @@ nav ul li a:hover {
   background-color: #e87159;
   color: #090c17;
   font-weight: bold;
+  box-shadow: inset 0 0 10px #020312;
+  border: 1px solid #020312;
 }
 .cv i {
   font-size: 0.8em;
@@ -187,71 +189,66 @@ nav ul li a:hover {
   color: #fff;
   font-weight: bold;
   transition-duration: 1s;
+  display: inline-block;
 }
 .hire .button:hover {
   background-color: initial;
   border: 3px solid #e87159;
 }
-.pro-page a{
-  color:#e87159;
+.pro-page a {
+  color: #e87159;
   font-size: 1.2em;
   font-weight: 600;
   text-decoration: none;
   transition-duration: 2s;
 }
-.pro-page a:hover{
-  color:#ee330e;
+.pro-page a:hover {
+  color: #ee330e;
 }
-.pro-page a i{
+.pro-page a i {
   transition-duration: 1s;
 }
-.pro-page a i:hover{
+.pro-page a i:hover {
   margin-left: 1em;
 }
-/***************/
-.move-arrow{
-  
-    width: 70px;
-    height: 47px;
-    position: relative;
-    font-weight: bold;
-    color:#fff;
-    padding: 10px;
-    animation: move-arrow 5s 1;
-    -moz-animation: move-arrow 5s 1;
-    -webkit-animation: move-arrow 5s 1;
-    -o-animation:move-arrow 5s 1;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
+/******PROJECT INSIDE INDEX*********/
+
+
+.show{
+  transition-duration: 1s;
+  border: 1px solid #e87159;
 }
- @keyframes move-arrow {
-   
-0% {
-    transform: rotate(0deg);
-    left: 0px;
+.show:hover{
+  background-color: #03051de8;
 }
-25% {
-    transform: rotate(20deg);
-    left: 0px;
+
+.butt{
+  padding: .5em 1em;
+  margin: .6em ;
+  background-color: #e87159;
+  color: #020312;
+  font-weight: bold;
 }
-50% {
-    transform: rotate(0deg);
-    left: 50%;
+.butt:hover{
+  text-decoration: none;
+  color: initial;
+  background-color: #020312;
+  color: #e87159;
+  border: 1px solid #e87159;
+  transition-duration: 1s;
 }
-55% {
-    transform: rotate(-180deg);
-    left: 0%;
+
+.butt i {
+  font-size: 0.8em;
+  padding-left: 10px;
 }
-70% {
-    transform: rotate(0deg);
-    left: 90%;
-    color: #1ec7e6;
+
+
+
+/***** PROJECT-PAGE   **********/
+.pb{
+  background-image: url(../img/coding.webp);
 }
-100% {
-    transform: rotate(-360deg);
-    left: 0px;
-}
- }
 
 /*****  gET IN TOUCH   **********/
 .sms {
@@ -261,9 +258,7 @@ nav ul li a:hover {
 .get {
   padding: 5em 0;
 }
-.c {
-  padding-top: 2em;
-}
+
 /* *{
  border:  1px solid red;
 } */
@@ -293,10 +288,11 @@ nav ul li a:hover {
   background-position: center;
   background-attachment: fixed;
 }
-.view{
+.view {
   background-color: #ee330e;
   color: #fff;
 }
+
 /****************************************
      RESPONSIVENESS
 ****************************************/
@@ -309,6 +305,14 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+
+  .icon-bar {
+    margin: 1rem;
+    color: #090c17;
+  }
+  .space {
+    margin-top: 3em;
   }
   .r-letter {
     font-size: 2em;
@@ -333,17 +337,16 @@ nav ul li a:hover {
     text-shadow: 0 0 7px #fff;
   }
   .logo {
-  width: 9em;
-  position: absolute;
-  top: -.2em;
-  left: 1px;
-}
-.view{
-  background-color: #ee330e;
-  color: #fff;
-  font-size: 0.9em;
-}
-
+    width: 9em;
+    position: absolute;
+    top: -0.2em;
+    left: 1px;
+  }
+  .view {
+    background-color: #ee330e;
+    color: #fff;
+    font-size: 0.9em;
+  }
 }
 /* *{
   border: 1px solid red;

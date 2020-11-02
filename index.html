@@ -6,32 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="aos-master/aos-master/dist/aos.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  <link rel="stylesheet" href="httshow://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
   <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  <script src="httshow://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  <script src="httshow://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  <script src="httshow://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <script src="httshow://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
+  <link href="httshow://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="httshow://unpkg.com/aos@2.3.1/dist/aos.js">
   <script>  AOS.init();</script>
-  <link rel="stylesheet" href="aos-master/dist/aos.js" />
   <link rel="stylesheet" href="aos-master/dist/aos.css" />
-  <link rel="stylesheet" href="js/bootstrap.min.js" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/w3.css" />
   <link rel="stylesheet" href="icon/css/all.min.css">
-  <link rel="stylesheet" href="icon/js/all.min.js">
+  <link rel="stylesheet" href="css/social_bar.css">
 
   <title>A.Azeez Faruq</title>
 </head>
@@ -44,15 +41,15 @@
         <img src="img/logo.svg" alt="" class="logo">
       </a>
 
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <!-- Toggler/collashowibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collashowe" data-target="#collashowibleNavbar">
         <span class="navbar-toggler-icon " style="color: red;"></span>
       </button>
 
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavbar">
+      <div class="collapse navbar-collapse justify-content-end text-center " id="collashowibleNavbar">
         <ul class="navbar-nav mr-5">
-          <li class="nav-item">
+          <li class="nav-item ">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
@@ -86,7 +83,7 @@
     </div>
 
   </section>
-  <section class="pt-3" id="service" data-aos="zoom-in">
+  <section class="pt-3" id="service">
     <div class="section">
       <h2 class="text-center">My Services</h2>
       <!---Line divider-->
@@ -97,7 +94,7 @@
 
       <div class="w3-row-padding mt-5 ">
 
-        <div class="w3-third c ">
+        <div class="w3-third c pt-3">
           <div class="h">
             <span href="#" class="mt-3" data-aos="flip-right">
               <img src="img/icon-brushes.png.webp" alt="" class="mt-4 mb-3 pl-3" />
@@ -113,7 +110,7 @@
         </div>
 
 
-        <div class="w3-third c ">
+        <div class="w3-third c pt-3">
           <!---second Col-->
           <div class="h">
             <span href="#" class=" " data-aos="fade-up">
@@ -129,7 +126,7 @@
         </div>
 
 
-        <div class="w3-third c ">
+        <div class="w3-third c pt-3">
           <!----Third col------>
           <div class="h">
             <span href="#" class="mt-3  " data-aos="flip-left">
@@ -148,6 +145,7 @@
     </div>
   </section>
 
+  <!---------============SOCIAL BUTTONS===========----------->
 
   <!--======== ABOUT ME  ========== --->
   <section class="" id="about">
@@ -196,11 +194,11 @@
           </div>
         </div>
         <div class="go mt-5 text-center" data-aos="fade-up">
-          <button class="call mt-3" data-aos="slip-left">
+          <button class="call mt-3" data-aos="slip-left" onclick="location.href = 'tel:07010602957' ">
             Contact me
             <i class="fas fa-arrow-right"></i>
           </button>
-          <button class="cv mt-3">
+          <button class="cv mt-3" onclick="location.href = '../cv/Umar_cv.docx' " download="">
             <i class="fas fa-download"></i>
             Download CV
           </button>
@@ -208,7 +206,7 @@
       </div>
       <div class="container hire text-center" data-aos="flip-up">
         <h2 class="">Let's build work together on your next project.</h2>
-        <a href="" class="button">
+        <a href="mailto:abdulazeezfaruq43@gmail.com" class="button">
           Hire me
         </a>
       </div>
@@ -222,76 +220,160 @@
 
         <img src="img/line.PNG" alt="">
       </div>
+      <div class="container-fluid">
+        <div class="row mt-5  text-dark">
+        </div>
+      </div>
 
-      <div class="w3-row-padding mt-5 text-dark">
-        <!---FIRST Col-->
-        <div class="w3-third c ">
-          <div class="card">
-            <img class="card-img-top" src="img/pro.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">View</a>
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="   col-sm-6 col-lg-4 col-md-4 bg-red pt-3">
+            <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
+
+              <img src="img/coding.webp" alt="">
+              <h3>uniVine</h3>
+              <p>
+                The app made for easy access of the customers.
+                <br>
+                Made with Javasript, Nodejs and php.along side with the combination of php code.
+              </p>
+
+              <a href="" class="butt">
+                See More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
             </div>
           </div>
-        </div>
+          <div class="  col-lg-4 col-sm-6 col-md-4 bg-red pt-3">
+            <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
 
+              <img src="img/coding.webp" alt="">
+              <h3>uniVine</h3>
+              <p>
+                The app made for easy access of the customers.
+                <br>
+                Made with Javasript, Nodejs and php.along side with the combination of php code.
+              </p>
 
-        <div class="w3-third c ">
-          <!---second Col-->
-          <div class="card">
-            <img class="card-img-top" src="img/pro.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">View</a>
+              <a href="" class="butt">
+                See More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
             </div>
           </div>
-        </div>
+          <div class="  bg-red col-sm-6 col-md-4 col-lg-4 pt-3">
+            <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
 
+              <img src="img/coding.webp" alt="">
+              <h3>uniVine</h3>
+              <p>
+                The app made for easy access of the customers.
+                <br>
+                Made with Javasript, Nodejs and php,along side with the combination of php code.
+              </p>
 
-        <div class="w3-third c ">
-          <!----Third col------>
-          <div class="card">
-            <img class="card-img-top" src="img/pro.jpg" alt="Card image" style="width:100%">
-            <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="#" class="btn btn-primary">View</a>
+              <a href="" class="butt">
+                See More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
             </div>
           </div>
+
         </div>
-        <div class="ml-2 pro-page text-light">
-          <a href="project.html">
-            View all
-            <i class="fas fa-arrow-alt-circle-right move-arrow"></i>
-          </a>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="   col-sm-6 col-lg-4 col-md-4 bg-red pt-3">
+            <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
+
+              <img src="img/coding.webp" alt="">
+              <h3>uniVine</h3>
+              <p>
+                The app made for easy access of the customers.
+                <br>
+                Made with Javasript, Nodejs and php.along side with the combination of php code.
+              </p>
+
+              <a href="" class="butt">
+                See More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+          <div class="  col-lg-4 col-sm-6 col-md-4 bg-red pt-3">
+            <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
+
+              <img src="img/coding.webp" alt="">
+              <h3>uniVine</h3>
+              <p>
+                The app made for easy access of the customers.
+                <br>
+                Made with Javasript, Nodejs and php.along side with the combination of php code.
+              </p>
+
+              <a href="" class="butt">
+                See More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+          <div class="  bg-red col-sm-6 col-md-4 col-lg-4 pt-3">
+            <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
+
+              <img src="img/coding.webp" alt="">
+              <h3>uniVine</h3>
+              <p>
+                The app made for easy access of the customers.
+                <br>
+                Made with Javasript, Nodejs and php.along side with the combination of php code.
+              </p>
+
+              <a href="" class="butt">
+                See More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+
+            </div>
+          </div>
+
         </div>
       </div>
 
 
-      <!-------GET IN TOUCH------->
-      <div class="touch mt" data-aos=" fad">
 
-        <h3 class="text-center" data-aos="fade-up">GET IN TOUCH</h3>
-        <div class="line py-3 mb-3" data-aos="zoom-in">
 
-          <img src="img/line.PNG" alt="">
-        </div>
+    </div>
 
-        <div class="get d-flex container text-center" style="flex-wrap: wrap;">
-          <div class="c col-sm-3" data-aos="fade-up">
+
+    <!-------GET IN TOUCH------->
+    <div class="touch mt" data-aos=" fade-up">
+
+      <h3 class="text-center" data-aos="fade-up">GET IN TOUCH</h3>
+      <div class="line py-3 mb-3" data-aos="zoom-in">
+
+        <img src="img/line.PNG" alt="">
+      </div>
+
+      <div class=" container-fluid text-center">
+        <div class="row">
+          <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-6" data-aos="fade-up">
             <img src="img/address.webp" alt="" class="mb-3" />
             <h4>Address</h4>
             <p>
-              999 Carter Street
+              Kwara State University
             </p>
             <p>
-              Sailor Springs, IL 62434
+              Malete, Ilorin, Ibadan.
             </p>
           </div>
           <!---2nd Meet--->
-          <div class="c col-sm-3" data-aos="fade-up">
+          <div class="c col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
             <img src="img/icon-phone-02.png.webp" alt="" class="mb-3" />
             <h4>Contact</h4>
             <p>
@@ -302,7 +384,7 @@
             </p>
           </div>
           <!---3rd Meet--->
-          <div class="c col-sm-3" data-aos="fade-up">
+          <div class="c col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
             <img src="img/icon-envelope.png.webp" alt="" class="mb-3" />
             <h4>E-mail</h4>
             <p>
@@ -315,7 +397,7 @@
             </p>
           </div>
           <!---4th Meet--->
-          <div class="c col-sm-3" data-aos="fade-up">
+          <div class="c col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
             <img src="img/icon-talk-bubble.png.webp" alt="" class="mb-3" />
             <h4>SMS</h4>
             <p>
@@ -330,54 +412,75 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
-  <div class="sms">
+  <div class="sms" style="font-family:sans-serif;">
     <section class="container">
       <h2 class="mb-5">SEND A MESSAGE</h2>
       <form action="">
         <div class="row justify-content-between">
           <div class="col-sm-5 form-group">
             <label for="">Name:</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control text-white" />
           </div>
 
           <div class="col-sm-5 form-group">
             <label for="">Email:</label>
-            <input type="email" class="form-control" />
+            <input type="email" class="form-control text-white" />
           </div>
         </div>
         <div class="form-group">
           <label for="">Subject:</label>
-          <input type="text" class="form-control" />
+          <input type="text" class="form-control text-white" />
         </div>
         <div class="form-group">
           <label for="">Message:</label>
-          <textarea class="form-control" rows="5"> </textarea>
+          <textarea class="form-control text-white" rows="5"> </textarea>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-down">
+          <button class="cv">
+            <span class=" plane  fab fa-telegram-plane" data-aos="zoom-in"></span>
+
+          </button>
+
         </div>
     </section>
-    <div class="text-center mt-5" data-aos="fade-down">
-      <button class="cv">
-        <span class=" plane  fab fa-telegram-plane" data-aos="zoom-in"></span>
-
-      </button>
-
-    </div>
   </div>
 
-  </form>
-  <footer class="text-center py-4" style="background-color: #020312;">
-    Copyright &copy; 2020 all Right Reserved. Developed by Umar Faruq.
+  <footer class="text-center" style="background-color: #020312;">
+    <div class="icon-bar text-center">
+      <a href="#" class="facebook" data-aos="flip-up">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="twitter" data-aos="flip-up">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="#" class="goggle" data-aos="flip-up">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="#" class="linkedi  " data-aos="fade-up">
+        <i class="fas fa-linkedin"></i>
+      </a>
+
+    </div>
+    <p>
+      Copyright &copy; 2020 all Right Reserved. Developed by Umar Faruq.
+    </p>
   </footer>
 </body>
 
 
 
 
-<script src="./aos-master/aos-master/dist/aos.js"></script>
+<script src="./aos-master/dist/aos.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script>
   AOS.init({
     duration: 800
   });     
 </script>
+<link rel="stylesheet" href="icon/css/all.min.css">
+<script src="icon/css/all.min.js"></script>
 
 </html>
