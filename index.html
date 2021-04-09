@@ -6,29 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="aos-master/aos-master/dist/aos.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="httshow://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="css/aos.css">
 
-  <!-- JS, Popper.js, and jQuery -->
-  <script src="httshow://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="httshow://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="httshow://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-  <script src="httshow://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
-  <link href="httshow://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="httshow://unpkg.com/aos@2.3.1/dist/aos.js">
-  <script>  AOS.init();</script>
+  <!-- <script>  AOS.init();</script> -->
   <link rel="stylesheet" href="aos-master/dist/aos.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="stylesheet" href="css/w3.css" />
   <link rel="stylesheet" href="icon/css/all.min.css">
   <link rel="stylesheet" href="css/social_bar.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- <link rel="stylesheet" href="css/animation.css"> -->
 
   <title>A.Azeez Faruq</title>
 </head>
@@ -42,9 +31,9 @@
       </a>
 
       <!-- Toggler/collashowibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collashowe" data-target="#collashowibleNavbar">
-        <span class="navbar-toggler-icon " style="color: red;"></span>
-      </button>
+      <span class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collashowibleNavbar">
+        <span class="menu_btn"> &#x2630</span>
+      </span>
 
       <!-- Navbar links -->
       <div class="collapse navbar-collapse justify-content-end text-center " id="collashowibleNavbar">
@@ -70,21 +59,21 @@
   </header>
   <section class="top  start">
 
-    <div class="container text-center mt-5" data-aos="">
-      <h1 class="r-letter ">
+    <div class="container center text-center mt-5" data-aos="">
+      <h1 class="r-letter " data-aos="fade-left">
         Abdul Azeez Faruq
       </h1>
-      <h3 class="t">Creative</h3>
-      <h2 class="d">Developer</h2>
-      <h2 style="color: #ff2a00;">&</h2>
-      <h3 class="g">Designer</h3>
+      <h3 class="t" data-aos="fade-right">Creative</h3>
+      <h2 class="d" data-aos="fade-left">Developer</h2>
+      <h2 style="color: #ff2a00;" data-aos="fade-right">&</h2>
+      <h3 class="g" data-aos="fade-left">Designer</h3>
 
 
     </div>
 
   </section>
   <section class="pt-3" id="service">
-    <div class="section">
+    <div class="section ">
       <h2 class="text-center">My Services</h2>
       <!---Line divider-->
       <div class="line" data-aos="fade-up">
@@ -92,9 +81,9 @@
       </div>
 
 
-      <div class="w3-row-padding mt-5 ">
+      <div class="w3-row-padding mt-5 m_center ">
 
-        <div class="w3-third c pt-3">
+        <div class="w3-third  pt-3" data-aos="zoom-in">
           <div class="h">
             <span href="#" class="mt-3" data-aos="flip-right">
               <img src="img/icon-brushes.png.webp" alt="" class="mt-4 mb-3 pl-3" />
@@ -110,9 +99,9 @@
         </div>
 
 
-        <div class="w3-third c pt-3">
+        <div class="w3-third  pt-3">
           <!---second Col-->
-          <div class="h">
+          <div class="h" data-aos="zoom-in">
             <span href="#" class=" " data-aos="fade-up">
               <img src="img/app-dev.webp" alt="" class="mt-4 mb-3 pl-3" />
 
@@ -126,9 +115,9 @@
         </div>
 
 
-        <div class="w3-third c pt-3">
+        <div class="w3-third  pt-3">
           <!----Third col------>
-          <div class="h">
+          <div class="h" data-aos="zoom-in">
             <span href="#" class="mt-3  " data-aos="flip-left">
               <img src="img/coding.webp" alt="" class="mt-4 mb-3 pl-3">
 
@@ -226,7 +215,7 @@
       </div>
 
       <div class="container-fluid">
-        <div class="row ">
+        <div class="row my_work">
           <div class="   col-sm-6 col-lg-4 col-md-4 bg-red pt-3">
             <div class=" show pt-3 pb-4 p-3" data-aos="fade-up">
 
@@ -238,11 +227,36 @@
                 Made with Javasript, Nodejs and php.along side with the combination of php code.
               </p>
 
-              <a href="" class="butt">
-                See More
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <!-- <div class="p_icons">
 
+
+                <a href="">
+                  <i class="fas fa-twitter">S</i>
+                </a>
+
+
+                <a href="">
+                  <i class="fas fa-twitter">S</i>
+                </a>
+
+
+                <a href="">
+                  <i class="fas fa-twitter">S</i>
+                </a>
+
+              </div> -->
+              <div class="butt_space">
+
+                <a href="" class="butt">
+                  See Code
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="" class="butt">
+                  Preview
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="  col-lg-4 col-sm-6 col-md-4 bg-red pt-3">
@@ -256,10 +270,18 @@
                 Made with Javasript, Nodejs and php.along side with the combination of php code.
               </p>
 
-              <a href="" class="butt">
-                See More
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <div class="butt_space">
+
+                <a href="" class="butt">
+                  See Code
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="" class="butt">
+                  Preview
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
           </div>
@@ -274,10 +296,18 @@
                 Made with Javasript, Nodejs and php,along side with the combination of php code.
               </p>
 
-              <a href="" class="butt">
-                See More
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <div class="butt_space">
+
+                <a href="" class="butt">
+                  See Code
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="" class="butt">
+                  Preview
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
           </div>
@@ -298,10 +328,18 @@
                 Made with Javasript, Nodejs and php.along side with the combination of php code.
               </p>
 
-              <a href="" class="butt">
-                See More
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <div class="butt_space">
+
+                <a href="" class="butt">
+                  See Code
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="" class="butt">
+                  Preview
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
           </div>
@@ -316,10 +354,18 @@
                 Made with Javasript, Nodejs and php.along side with the combination of php code.
               </p>
 
-              <a href="" class="butt">
-                See More
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <div class="butt_space">
+
+                <a href="" class="butt">
+                  See Code
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="" class="butt">
+                  Preview
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
           </div>
@@ -334,20 +380,24 @@
                 Made with Javasript, Nodejs and php.along side with the combination of php code.
               </p>
 
-              <a href="" class="butt">
-                See More
-                <i class="fas fa-arrow-right"></i>
-              </a>
+              <div class="butt_space">
+
+                <a href="" class="butt">
+                  See Code
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="" class="butt">
+                  Preview
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
 
             </div>
           </div>
 
         </div>
       </div>
-
-
-
-
     </div>
 
 
@@ -373,7 +423,7 @@
             </p>
           </div>
           <!---2nd Meet--->
-          <div class="c col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+          <div class="col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
             <img src="img/icon-phone-02.png.webp" alt="" class="mb-3" />
             <h4>Contact</h4>
             <p>
@@ -384,7 +434,7 @@
             </p>
           </div>
           <!---3rd Meet--->
-          <div class="c col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+          <div class=" col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
             <img src="img/icon-envelope.png.webp" alt="" class="mb-3" />
             <h4>E-mail</h4>
             <p>
@@ -397,7 +447,7 @@
             </p>
           </div>
           <!---4th Meet--->
-          <div class="c col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
+          <div class=" col-lg-3 col-md-6 col-sm-6" data-aos="fade-up">
             <img src="img/icon-talk-bubble.png.webp" alt="" class="mb-3" />
             <h4>SMS</h4>
             <p>
@@ -440,8 +490,9 @@
 
         <div class="text-center mt-5" data-aos="fade-down">
           <button class="cv">
-            <span class=" plane  fab fa-telegram-plane" data-aos="zoom-in"></span>
+            <!-- <span class=" plane  fab fa-telegram-plane" data-aos="zoom-in"></span> -->
 
+            Submit
           </button>
 
         </div>
@@ -450,16 +501,16 @@
 
   <footer class="text-center" style="background-color: #020312;">
     <div class="icon-bar text-center">
-      <a href="#" class="facebook" data-aos="flip-up">
+      <a href="#" class="facebook icon_social" data-aos="flip-up">
         <i class="fab fa-facebook-f"></i>
       </a>
       <a href="#" class="twitter" data-aos="flip-up">
-        <i class="fab fa-twitter"></i>
+        <i class="fas fa-twitter"></i>
       </a>
       <a href="#" class="goggle" data-aos="flip-up">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="#" class="linkedi  " data-aos="fade-up">
+      <a href="#" class="linkedin  " data-aos="fade-up">
         <i class="fas fa-linkedin"></i>
       </a>
 
@@ -471,14 +522,12 @@
 </body>
 
 
+<script src="js/aos.js"></script>
 
-
-<script src="./aos-master/dist/aos.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <script>
   AOS.init({
     duration: 800
-  });     
+  });
 </script>
 <link rel="stylesheet" href="icon/css/all.min.css">
 <script src="icon/css/all.min.js"></script>

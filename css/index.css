@@ -17,12 +17,20 @@ nav ul li a {
 }
 nav {
   background-color: #020312;
+  position: relative;
 }
 nav ul li a:hover {
   color: #ee330e;
 }
+.center {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .start {
-  height: 90vh;
+  height: 100vh;
   padding-top: 2em;
   padding-bottom: 2em;
   background-image: url(../img/top-c.jpg);
@@ -63,8 +71,13 @@ nav ul li a:hover {
   color: #e87159;
 }
 #service {
-  padding-bottom: 5em;
   background-color: #090c17;
+}
+#service .section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 95%;
+  margin: 0 auto;
 }
 .h {
   height: 260px;
@@ -72,12 +85,18 @@ nav ul li a:hover {
   background-color: #12141c;
   transition-duration: 1s;
 }
+.h p {
+  max-width: 300px;
+}
 .h:hover {
   background-color: rgba(9, 12, 23, 0.925);
   border: 1px solid rgb(242, 108, 78);
 }
-.c{
-  
+
+.m_center {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .mt {
   margin: 5em 0;
@@ -130,7 +149,12 @@ nav ul li a:hover {
 .space a {
   color: #fff;
 }
-
+.menu_btn {
+  padding: 2rem 0;
+}
+.navbar-toggler {
+  border: none;
+}
 .call {
   background-color: #e87159;
   color: #020312;
@@ -143,7 +167,7 @@ nav ul li a:hover {
   background-color: initial;
   padding: 10px 19px;
   border: 1px solid #e87159;
-  transition-duration: 1s;
+  transition-duration: 0.8s;
   color: #fff;
 }
 .call:hover {
@@ -154,9 +178,13 @@ nav ul li a:hover {
 .cv:hover {
   background-color: #e87159;
   color: #090c17;
-  font-weight: bold;
-  box-shadow: inset 0 0 10px #020312;
-  border: 1px solid #020312;
+  font-size: 1.2rem;
+  font-weight: 800;
+  box-shadow: 0 0 10px #020312;
+  border-radius: 0.51rem;
+  /* transform: translateY(-2px); */
+  /* border: 1px solid #020312; */
+  box-shadow: 1px 1px 10px #020413;
 }
 .cv i {
   font-size: 0.8em;
@@ -177,7 +205,7 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: 6vh;
   color: initial;
-  text-shadow: 0 0px 2px #fff;
+  text-shadow: 0 0px 5px #e87159;
 }
 .hire a {
   padding: 10px 20px;
@@ -213,23 +241,26 @@ nav ul li a:hover {
 }
 /******PROJECT INSIDE INDEX*********/
 
-
-.show{
+.show {
   transition-duration: 1s;
   border: 1px solid #e87159;
 }
-.show:hover{
+.show:hover {
   background-color: #03051de8;
 }
 
-.butt{
-  padding: .5em 1em;
-  margin: .6em ;
+.butt {
+  padding: 0.5em 1em;
+  margin: 0.6em 0;
   background-color: #e87159;
   color: #020312;
   font-weight: bold;
 }
-.butt:hover{
+.butt_space {
+  display: flex;
+  justify-content: space-between;
+}
+.butt:hover {
   text-decoration: none;
   color: initial;
   background-color: #020312;
@@ -243,10 +274,8 @@ nav ul li a:hover {
   padding-left: 10px;
 }
 
-
-
 /***** PROJECT-PAGE   **********/
-.pb{
+.pb {
   background-image: url(../img/coding.webp);
 }
 
@@ -298,7 +327,7 @@ nav ul li a:hover {
 ****************************************/
 @media screen and (max-width: 480px) {
   .start {
-    height: 70vh;
+    /* height: 70vh; */
     padding-top: 5em;
     padding-bottom: 0em;
     background-image: url(../img/top-c.jpg);
@@ -306,7 +335,9 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-
+  .center {
+    width: 100%;
+  }
   .icon-bar {
     margin: 1rem;
     color: #090c17;
@@ -339,7 +370,7 @@ nav ul li a:hover {
   .logo {
     width: 9em;
     position: absolute;
-    top: -0.2em;
+    top: -0.7em;
     left: 1px;
   }
   .view {
