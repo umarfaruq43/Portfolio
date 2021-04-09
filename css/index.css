@@ -150,10 +150,17 @@ nav ul li a:hover {
   color: #fff;
 }
 .menu_btn {
-  padding: 2rem 0;
+  padding: 3rem 0;
+  outline: none;
 }
+
 .navbar-toggler {
   border: none;
+  outline: none;
+}
+.navbar-toggler:hover {
+  border: none;
+  outline: none;
 }
 .call {
   background-color: #e87159;
@@ -247,6 +254,7 @@ nav ul li a:hover {
 }
 .show:hover {
   background-color: #03051de8;
+  /* border: 1px solid #e87159; */
 }
 
 .butt {
