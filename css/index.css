@@ -1,7 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #020312;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 144rem;
+  position: relative;
 }
 * {
   box-sizing: border-box;
@@ -10,6 +16,7 @@ body {
   width: 9em;
   position: absolute;
   top: -0.2em;
+  z-index: 2000;
 }
 nav ul li a {
   margin: 0 7px;
@@ -17,7 +24,7 @@ nav ul li a {
 }
 nav {
   background-color: #020312;
-  position: relative;
+  /* position: relative; */
 }
 nav ul li a:hover {
   color: #ee330e;
@@ -31,8 +38,8 @@ nav ul li a:hover {
 }
 .start {
   height: 100vh;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  /* padding-top: 2em; */
+  /* padding-bottom: 2em; */
   background-image: url(../img/top-c.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -84,13 +91,14 @@ nav ul li a:hover {
   padding: 3%;
   background-color: #12141c;
   transition-duration: 1s;
+  border: 1px solid rgb(242, 108, 78);
 }
 .h p {
-  max-width: 300px;
+  max-width: 400px;
 }
 .h:hover {
-  background-color: rgba(9, 12, 23, 0.925);
-  border: 1px solid rgb(242, 108, 78);
+  background-color: #02041b;
+  border: none;
 }
 
 .m_center {
@@ -111,6 +119,7 @@ nav ul li a:hover {
 }
 .top {
   padding: 5em 0;
+  position: relative;
 }
 .l {
   border: 1px solid red;
@@ -283,6 +292,13 @@ nav ul li a:hover {
 }
 
 /***** PROJECT-PAGE   **********/
+
+.bg-red {
+  margin-bottom: 2rem;
+}
+#project {
+  padding: 0 2rem;
+}
 .pb {
   background-image: url(../img/coding.webp);
 }
@@ -305,18 +321,26 @@ nav ul li a:hover {
   color: #fff;
   outline: none;
 }
-.sms textarea {
+.sms textarea,
+textarea:visited,
+textarea:active,
+textarea:focus,
+textarea::backdrop {
   background-color: #020312;
   color: #fff;
   outline: none;
 }
+.form-control:focus {
+  background-color: #020312;
+  outline: none;
+}
 
 .sms input:hover {
-  background-color: #090c17;
+  /* background-color: #090c17; */
   outline: none;
 }
 .sms textarea:hover {
-  background-color: #12141c;
+  /* background-color: #12141c; */
   outline: none;
 }
 .sms {
@@ -330,21 +354,53 @@ nav ul li a:hover {
   color: #fff;
 }
 
+.back_to_top {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  background-color: #e87159;
+  width: 4rem;
+  height: 4rem;
+  z-index: 1000;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.back_to_top:hover {
+  text-decoration: none;
+  /* background-color: ; */
+  transform: scale(1.2);
+}
+.back_to_top i {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #020312;
+}
+
 /****************************************
      RESPONSIVENESS
 ****************************************/
 @media screen and (max-width: 480px) {
   .start {
-    /* height: 70vh; */
-    padding-top: 5em;
-    padding-bottom: 0em;
+    height: 100vh;
+    /* padding-top: 5em; */
+    /* padding-bottom: 0em; */
     background-image: url(../img/top-c.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
   .center {
-    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .icon-bar {
     margin: 1rem;
@@ -380,13 +436,63 @@ nav ul li a:hover {
     position: absolute;
     top: -0.7em;
     left: 1px;
+    z-index: 200;
   }
   .view {
     background-color: #ee330e;
     color: #fff;
     font-size: 0.9em;
   }
+
+  #project {
+    padding: 0 0;
+  }
+  .footer_text {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
 }
-/* *{
-  border: 1px solid red;
-} */
+
+.butt .hub {
+  font-size: 1.3rem;
+}
+
+.nulge {
+  background-image: linear-gradient(rgba(2, 3, 18, 0.7), rgba(2, 3, 18, 0.7)),
+    url(../img/build.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+.todo {
+  background-image: linear-gradient(rgba(2, 3, 18, 0.7), rgba(2, 3, 18, 0.7)),
+    url(../img/build.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.flower {
+  background-image: linear-gradient(rgba(2, 3, 18, 0.7), rgba(2, 3, 18, 0.7)),
+    url(../img/build.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+.dice {
+  background-image: linear-gradient(rgba(2, 3, 18, 0.7), rgba(2, 3, 18, 0.7)),
+    url(../img/build.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+.quote {
+  background-image: linear-gradient(rgba(2, 3, 18, 0.7), rgba(2, 3, 18, 0.7)),
+    url(../img/build.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.gitUser {
+  background-image: linear-gradient(rgba(2, 3, 18, 0.7), rgba(2, 3, 18, 0.7)),
+    url(../img/build.jpg);
+  background-position: center;
+  background-size: contain;
+}
